@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://www.saucedemo.com/",
+  "inventoryUrlPattern": "inventory\\.html",
+  "password": "secret_sauce",
+  "timeouts": { "slowLogin": 15000 },
+  "successUsers": ["standard_user", "visual_user"],
+  "lockedUser": {
+    "username": "locked_out_user",
+    "error": "Sorry, this user has been locked out."
+  },
+  "invalidLogin": {
+    "username": "standard_user",
+    "password": "wrong_password",
+    "error": "Username and password do not match any user in this service"
+  },
+  "inventoryTitle": "Products"
+}

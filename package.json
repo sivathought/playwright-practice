@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "allure:generate": "allure generate allure-results --clean && rm -rf allure-results allure-report/*.json",
+    "allure:open": "open allure-report/index.html",
+    "allure:serve": "npm run allure:generate && open allure-report/index.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sivathought/playwright-practice.git"
@@ -18,6 +23,8 @@
   "homepage": "https://github.com/sivathought/playwright-practice#readme",
   "devDependencies": {
     "@playwright/test": "^1.65.1",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "allure": "^3.33.0",
+    "allure-playwright": "^3.14.0"
   }
 }

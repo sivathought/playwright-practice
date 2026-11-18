@@ -1,0 +1,12 @@
+{
+  "login": {
+    "username": "username",
+    "password": "password",
+    "loginButton": "login-button",
+    "error": "error"
+  },
+  "inventory": {
+    "title": "title",
+    "logoutLink": "logout-sidebar-link"
+  }
+}
